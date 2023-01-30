@@ -1,0 +1,117 @@
+/* 오늘의 쇼핑 제안 */
+
+.ewrap {
+    width: 1022px;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* 로고 */
+.logo {
+    margin-top: 100px;
+    margin-bottom: 48px;
+}
+
+/* 쇼핑타이틀 */
+.title {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+.shopping_tit {
+    font-weight: 500;
+font-size: 24px;
+line-height: 115%;
+}
+
+/* 쇼핑 아이템 */
+.shoppling_list {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 1022px;
+    margin: 0;
+    padding: 0;
+}
+
+.shoppling_item {
+position: relative;
+width: 200px;
+height: 270px;
+
+}
+
+.red_box {
+    position: absolute;
+    background-color:var(--color-red-500);
+    padding: 3px 10px;
+    width: 53px;
+    height: 30px;
+    border-radius: 0px 0px 4px 0px;
+    color: #fff;
+    top: -15px;
+}
+
+.shoppling_item {
+    margin-top:14px;
+}
+.shoppling_item .item_img {
+    vertical-align: middle;
+    text-align: center;
+    margin-top: 14px auto;
+    /* width: 160px;
+    height: 160px; */
+
+}
+.img_size {
+    width: 160px;
+    height: 160px;
+}
+
+
+.item_info{
+    margin: 12px 14px 0;
+}
+.item_name {
+width: 172px;
+height: 17px;
+font-weight: 400;
+font-size: 14px;
+line-height: 120%;
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+margin-bottom: 19px;
+}
+
+.star {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.star_range {
+    position: relative;
+    background: url(/zero00_mission/Mission2/Mission-02/Mission-02/assets/sprites/rating-stars.png)no-repeat 0px -96px;
+    width: 68px;
+    height: 16px;
+
+    /* top: 33px;
+    display: flex; */
+}
+
+.star_info{
+    font-weight: 400;
+font-size: 14px;
+
+color:var(--color-gray-500);
+/* background-color:var(--color-red-500); */
+
+}
+
+.free_delivery {
+    color:var(--color-gray-700);
+    font-weight: 500;
+font-size: 14px;
+line-height: 120%;
+}
