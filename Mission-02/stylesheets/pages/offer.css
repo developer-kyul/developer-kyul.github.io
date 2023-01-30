@@ -39,7 +39,7 @@ line-height: 115%;
 position: relative;
 width: 200px;
 height: 270px;
-
+margin-top:14px;
 }
 
 .red_box {
@@ -53,26 +53,23 @@ height: 270px;
     top: -15px;
 }
 
-.shoppling_item {
-    margin-top:14px;
-}
 .shoppling_item .item_img {
     vertical-align: middle;
     text-align: center;
     margin-top: 14px auto;
     /* width: 160px;
     height: 160px; */
-
 }
+
 .img_size {
     width: 160px;
     height: 160px;
 }
 
-
 .item_info{
     margin: 12px 14px 0;
 }
+
 .item_name {
 width: 172px;
 height: 17px;
@@ -92,26 +89,20 @@ margin-bottom: 19px;
 
 .star_range {
     position: relative;
-    background: url(/zero00_mission/Mission2/Mission-02/Mission-02/assets/sprites/rating-stars.png)no-repeat 0px -96px;
+    background: url(/Mission-02/assets/sprites/rating-stars.png)no-repeat 0px -96px;
     width: 68px;
     height: 16px;
-
-    /* top: 33px;
-    display: flex; */
 }
 
 .star_info{
     font-weight: 400;
-font-size: 14px;
-
-color:var(--color-gray-500);
-/* background-color:var(--color-red-500); */
-
+    font-size: 14px;
+    color:var(--color-gray-500);
 }
 
 .free_delivery {
     color:var(--color-gray-700);
     font-weight: 500;
-font-size: 14px;
-line-height: 120%;
+    font-size: 14px;
+    line-height: 120%;
 }
