@@ -1,0 +1,222 @@
+/* ---------------------------------------------- */
+/* 헤더                                            */
+/* ---------------------------------------------- */
+.header {
+  width: 1920px;
+  height: 117px;
+}
+
+.button--category {
+  background-color: var(--color-blue-600);
+  position: relative;
+  width: 110px;
+  height: 116px;
+  border: none;
+  left: 450px;
+
+}
+
+.button--category img {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.button--category p {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-weight: 400;
+  font-size: 12px;
+  color:#fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------- */
+/* 내비게이션                                        */
+/* ---------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------- */
+/* 메인 콘텐츠                                       */
+/* ---------------------------------------------- */
+/* 메인 콘텐츠 영역의 최소 높이 설정 */
+.main{
+  min-height: 52rem;
+}
+
+
+/* ---------------------------------------------- */
+/* 푸터                                            */
+/* ---------------------------------------------- */
+.footer {
+  position: relative;
+  width: 1920px;
+}
+
+/* ---------------------------------------------- */
+/*footer-layer1                                   */
+/* ---------------------------------------------- */
+.footer-layer1 {
+  background-color: var(--color-gray-200);
+  line-height: 10px;
+  height: 40px;
+  padding-top: 12px;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-layer1 a{
+  border-right: 1px solid gray;
+  padding: 5px 14px;
+  text-align: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 12px;
+  /* line-height: 120%; */
+  /* padding-top: 15px; */
+}
+
+.footer-layer1 a:nth-child(10){
+  border-right: none;
+}
+
+/* ---------------------------------------------- */
+/*footer-layer2                                   */
+/* ---------------------------------------------- */
+.footer-layer2 {
+  width: 1200px;
+  height: 143px;
+  margin: 0 auto;
+  /* background-color: pink; */
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 32px;
+  align-items: center;
+  align-items: flex-start;
+}
+
+.footer-content {
+  width: calc(260px+16px);
+  height: 143px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #4E4E4E;
+}
+
+.contact-info {
+  color: #4E4E4E;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.contact-info span {
+  font-weight: 700;
+  font-size: 40px;
+  align-items: center;
+  margin: 9px 0 -15px 0;
+  display: block;
+}
+
+.safe-service {
+  color: #4E4E4E;
+}
+
+.safe-service b {
+  line-height: 31px;
+}
+
+
+/* ---------------------------------------------- */
+/*footer-layer3                                   */
+/* ---------------------------------------------- */
+.footer-layer3_bg {
+  width: 1920px;
+  background-color: #272727;
+}
+
+.footer-layer3{
+  text-align: center;
+  width: 1020px;
+  height: 102px;
+  display: flex;
+  margin: 0 auto;
+  align-items:center;
+  color: #E7E7E7;
+}
+
+.coupang-copyright {
+  width: 848px;
+  height: 70px;
+  font-weight: 300;
+font-size: 12px;
+text-align: left;
+align-items: center;
+letter-spacing: -1px;
+position: relative;
+}
+
+.sns-link {
+  display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    align-content: flex-end;
+    flex-wrap: nowrap;
+    /* position: absolute; */
+    position: relative;
+    top: 20px;
+    gap: 10px;
+}
+
+.instagram {
+  background: linear-gradient(174.12deg, #285AEB 5.61%, #BC1888 22.32%, #CC2366 36.16%, #DC2743 51.91%, #E6683C 73.38%, #F09433 91.99%);
+  border-radius: 50%;
+}

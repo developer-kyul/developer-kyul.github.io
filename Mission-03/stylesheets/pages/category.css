@@ -1,0 +1,202 @@
+/* 카테고리별 추천 광고상품 */
+
+.ewrap {
+    width: 1020px;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* 로고 */
+.logo {
+    margin-top: 100px;
+    margin-bottom: 48px;
+}
+
+/* 카테코리별 추천*/
+.category{
+    margin-bottom: 24px;
+}
+
+.small_tit{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 115%;
+}
+
+.big_tit{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 115%;
+}
+
+.big_tit span {
+    color: var(--color-blue-600);
+}
+
+/* 생활용품 */
+.box01 {
+    width: 100%;
+    height: 634px;
+    margin-bottom: 50px;
+
+    border-top: 2px solid #9D7A6D;
+    border-bottom: 2px solid #9D7A6D;
+}
+
+.box02 {
+    width: 100%;
+    height: 634px;
+    margin-bottom: 50px;
+
+    border-top: 2px solid #00B599;
+    border-bottom: 2px solid #00B599;
+}
+
+.info_wrap {
+    width: 174px;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+
+.title {
+    position: absolute;
+    margin-top: 48px;
+    margin-left: 24px;
+}
+
+.title h2 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 115%;
+    margin: 8px 0;
+    
+    color: var(--color-brown-300);
+}
+
+.title .title_green {
+    color: var(--color-green-700);
+}
+
+.brown_best {
+    color: var(--color-brown-300);
+}
+
+.green_best{
+    color: var(--color-green-700);
+}
+
+.title p {
+    font-weight: 700;
+font-size: 14px;
+line-height: 120%;
+
+color: var(--color-gray-700);
+}
+
+.key_word {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    width: 124px;
+    padding: 22px 10px;
+    border-bottom: 1px solid #ddd;
+}
+.category-best-link {
+    float: left;
+    clear: left;
+    display: block;
+    line-height: 28px;
+    padding: 0 10px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    white-space: nowrap;
+    font-size: 12px;
+}
+
+/* 슬라이드 */
+.slide_wrap {
+    width: 320px;
+    height: 631px;
+    position: relative;
+    float: left;
+}
+
+.promotion-title {
+    position: absolute;
+    bottom: 50px;
+    margin: 450px 0 0 22px;
+    z-index: 2;
+    display: block;
+    width: 260px;
+    height: 90px;
+    padding: 20px 22px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.bg_brown{
+    background: var(--color-brown-300);
+}
+
+.bg_green {
+ background-color:var(--color-green-700);
+}
+
+.promotion-txt {
+    font-size: 14px;
+}
+
+.dot-navi{
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    width: 100%;
+    height: 10px;
+    text-align: center;
+    font-size: 0;
+    margin: 0 auto;
+}
+
+/* best-product-list */
+
+.best-product-list {
+    float: left;
+    width: 524px;
+    height: 634px;
+}
+
+.best-product-list ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.best-product-list ul li {
+    width: 160px;
+    height: 300px;
+    float: left;
+}
+
+.item_txt {
+    font-size: 14px;
+    margin-bottom: 10px;
+
+    display: block;
+
+    margin: 6px 0 1px;
+}
+
+.price {
+    font-weight: bold;
+}
+
+.red_info {
+    color: var(--color-red-500);
+    font-size: 14px;
+    margin-top: 14px;
+    margin-bottom: 4px;
+    display: block;
+}
