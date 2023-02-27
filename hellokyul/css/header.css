@@ -9,8 +9,8 @@ hearder
 }
 
 .header_cotaniner{
-    width: 80vw;
-    height: 5vh;
+    width: 80%;
+    height: 7%;
     margin: 0 auto;
 }
 
@@ -60,5 +60,5 @@ content01
 }
 
 #content01 p {
-    
+
 }
