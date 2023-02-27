@@ -10,7 +10,7 @@ hearder
 
 .header_cotaniner{
     width: 80%;
-    height: 7%;
+    height: 10%;
     margin: 0 auto;
 }
 
@@ -53,12 +53,17 @@ content01
 ------------------*/
 
 #content01{
-    background-color: pink;
-    height: 95vh;
+    /* background-color: pink; */
+    height: 90%;
     width: 80vw;
     margin: 0 auto;
 }
 
 #content01 p {
-
+    position: absolute;
+    top: 45%;
+    font-size: 4em;
+    line-height: 150%;
+    font-weight: 600;
 }
+
