@@ -1,0 +1,28 @@
+        /* 스크롤바를 없애기 위한 소스 */
+        html{overflow: hidden;}
+
+        /* content 요소의 높이를 전체 화면으로(뷰포트) 설정하기 위해 먼저 html 요소와 body 요소의 높이를 설정 */
+        html, body{width: 100%; height: 100%;}
+
+        .content{
+        width: 100%; height: 100%;
+        /* background-color: blueviolet; */
+
+        position: relative;
+        }
+
+        /* content 요소의 영역을 기준으로 배치가 되도록 포지션 값 */
+        /* content 요소의 영역을 기준으로 가운데 배치 */
+        .content > h1{
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%,-50%);
+
+        font-size: 20em;
+        font-weight: bold;
+        text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
+
+        }
+
+        /* 짝수의 배경을 바꿈 */
+        /* .content:nth-child(even){background-color: #333;} */
