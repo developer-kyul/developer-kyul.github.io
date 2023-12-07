@@ -5,15 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KYUL World</title>
 
+    <!--Open Graph-->
+    <meta property="og:type" content="website" /> <!--사이트 종류-->
+    <meta property="og:site_name" content="KYUL World" /> <!--사이트 이름-->
+    <meta property="og:title" content="프론트엔드 김한결" /> <!--페이지 제목-->
+    <meta property="og:description" content="프론트엔드 김한결의 포트폴리오입니다" /> <!--사이트 설명-->
+    <meta property="og:image" content="" /> <!--사이트 이미지-->
+    <meta property="og:url" content="https://developer-kyul.github.io/" /> 
+
+    <!--Twitter Card-->
+    <meta property="twitter:card" content="summary" /> <!--기본 정보-->
+    <meta property="twitter:site" content="KYUL World" />
+    <meta property="twitter:title" content="프론트엔드 김한결" />
+    <meta property="twitter:description" content="프론트엔드 김한결의 포트폴리오입니다" />
+    <meta property="twitter:image" content="" />
+    <meta property="twitter:url" content="https://developer-kyul.github.io/" />
+
     <!-- css -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/style.css">
-
-
 </head>
-<body>
 
+<body>
     <div class="inner">
         <!-- navigation bar -->
         <nav>
@@ -33,35 +47,58 @@
             <div id="current-date-time"></div>
         </header>
 
-        <!-- 본문 영역 -->
-        <article>
-            <div class="note">
+
+<article>           
+
+
+        <!-- 체크리스트 -->
+        <div id="checklist-container">
+            <div class="checklist-item">
+            <input type="checkbox" id="item1" onchange="updateStatus('item1')">
+            <label for="item1">1st icon : RESUME</label>
             </div>
-        </article>
+            <div class="checklist-item">
+            <input type="checkbox" id="item2" onchange="updateStatus('item2')">
+            <label for="item2">2nd icon : Work Experience</label>
+            </div>
+            <div class="checklist-item">
+            <input type="checkbox" id="item3" onchange="updateStatus('item3')">
+            <label for="item3">3rd icon : Single Project</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="item4" onchange="updateStatus('item4')">
+                <label for="item4">4th icon : JS Project </label>
+            </div>
+        
+            <button id="add-btn" onclick="addItem()">Add Item</button>
+            <button id="remove-btn" onclick="removeItem()">Remove Checked Items</button>
+        </div>
 
-        <!-- 오른쪽 icon -->
-        <article class="icon_box">
-            <!-- 이력서 -->
-            <a href="#" onclick="">
-                <img class="icon" src="./img/computer.png" alt="">
-            </a>
+            <!-- 오른쪽 icon -->
+            <div class="icon_box">
+                <!-- 이력서 -->
+                <a href="#" onclick="">
+                    <img class="icon" src="./img/computer.png" alt="">
+                </a>
+    
+                <!-- 회사프로젝트 -->
+                <a href="#" onclick="">
+                    <img class="icon" src="./img/floppy-disk.png" alt="">
+                </a>
+                
+                <!-- 싱글프로젝트 -->
+                <a href="#" onclick="openPopup()">
+                    <img class="icon" src="./img/folder.png" alt="">
+                </a>
+                
+                <!-- 혼자 공부한 것들 -->
+                <a href="#" onclick="openPopup()">
+                    <img class="icon" src="./img/ghost.png" alt="">
+                </a>
+            </div>
+    </article>
 
-            <!-- 회사프로젝트 -->
-            <a href="#" onclick="">
-                <img class="icon" src="./img/floppy-disk.png" alt="">
-            </a>
-            
-            <!-- 싱글프로젝트 -->
-            <a href="#" onclick="openPopup()">
-                <img class="icon" src="./img/folder.png" alt="">
-            </a>
-            
-            <!-- 혼자 공부한 것들 -->
-            <a href="#" onclick="openPopup()">
-                <img class="icon" src="./img/ghost.png" alt="">
-            </a>
-        </article>
-    </div>
+</div>
 
     <!-- 팝업 포트폴리오 -->
     <div id="popup_portfolio">

@@ -55,3 +55,35 @@
   function closePopup() {
     document.getElementById('popup_portfolio').style.display = 'none';
   }
+
+  //체크리스트
+  function updateStatus(itemId) {
+    var checkbox = document.getElementById(itemId);
+    var label = document.querySelector('label[for="' + itemId + '"]');
+
+    if (checkbox.checked) {
+      label.style.textDecoration = 'line-through';
+    } else {
+      label.style.textDecoration = 'none';
+    }
+  }
+
+  function addItem() {
+    var newItemId = 'item' + (document.querySelectorAll('.checklist-item').length + 1);
+    var newItem = document.createElement('div');
+    newItem.className = 'checklist-item';
+    newItem.innerHTML = `
+      <input type="checkbox" id="${newItemId}" onchange="updateStatus('${newItemId}')">
+      <label for="${newItemId}">New Task</label>
+    `;
+    document.getElementById('checklist-container').insertBefore(newItem, document.getElementById('add-btn'));
+  }
+
+  function removeItem() {
+    var checkboxes = document.querySelectorAll('.checklist-item input[type="checkbox"]');
+    checkboxes.forEach(function (checkbox) {
+      if (checkbox.checked) {
+        checkbox.parentElement.remove();
+      }
+    });
+  }
