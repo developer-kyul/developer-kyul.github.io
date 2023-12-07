@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KYUL World</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+
+</head>
+<body>
+
+    <div class="inner">
+        <!-- navigation bar -->
+        <nav>
+            <a href=""></a>
+        </nav>
+
+        <!-- header -->
+        <header>
+            <div>
+                <h1>Hello, KYUL World</h1>
+            </div>
+            <div>
+                <a href="">git</a>
+                <a href="">Resume</a>
+            </div>
+            <!-- 현재시간 -->
+            <div id="current-date-time"></div>
+        </header>
+
+        <!-- 본문 영역 -->
+        <article>
+            <div class="note">
+            </div>
+        </article>
+
+        <!-- 오른쪽 icon -->
+        <article class="icon_box">
+            <!-- 이력서 -->
+            <a href="#" onclick="">
+                <img class="icon" src="./img/computer.png" alt="">
+            </a>
+
+            <!-- 회사프로젝트 -->
+            <a href="#" onclick="">
+                <img class="icon" src="./img/floppy-disk.png" alt="">
+            </a>
+            
+            <!-- 싱글프로젝트 -->
+            <a href="#" onclick="openPopup()">
+                <img class="icon" src="./img/folder.png" alt="">
+            </a>
+            
+            <!-- 혼자 공부한 것들 -->
+            <a href="#" onclick="openPopup()">
+                <img class="icon" src="./img/ghost.png" alt="">
+            </a>
+        </article>
+    </div>
+
+    <!-- 팝업 포트폴리오 -->
+    <div id="popup_portfolio">
+
+        <div class="portfolio_header">
+            <div id="close-button" onclick="closePopup()">X</div>
+            <p>Side Project</p>
+        </div>
+
+        <div class="portfolio_box">
+            <div id="menu">
+                <div class="menu-item" onclick="changeTab('tab1')">KYUL World</div>
+                <div class="menu-item" onclick="changeTab('tab2')">LG Dios</div>
+                <div class="menu-item" onclick="changeTab('tab3')">Apple iPad clone coding</div>
+                <div class="menu-item" onclick="changeTab('tab4')">Starbuck Korea clone coding</div>
+                <div class="menu-item" onclick="changeTab('tab5')">MBTI TEST</div>
+            </div>
+            
+            <div id="content">
+                <div class="tab-content" id="tab1">Content for Tab 1</div>
+                <div class="tab-content" id="tab2">Content for Tab 2</div>
+                <div class="tab-content" id="tab3">Content for Tab 3</div>
+                <div class="tab-content" id="tab4">Content for Tab 4</div>
+                <div class="tab-content" id="tab5">Content for Tab 5</div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- js -->
+    <script src="./js/main.js"></script>
+</body>
+</html>

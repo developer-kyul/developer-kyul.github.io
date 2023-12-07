@@ -1,0 +1,165 @@
+
+
+  /* Inner */
+  .inner {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+
+    overflow-x: none;
+    overflow-y: none;
+    
+  }
+  
+  @media (max-width: 1000px) {
+    .inner {
+      max-width: 692px;
+    }
+  }
+
+
+  header {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    border: 4px solid;
+    border-radius: 22px;
+    padding: 20px;
+    background-color: #c0cee7;
+  }
+
+
+  .note {
+    border: 1px solid red;
+    height: 300px;
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    display: none;
+  }
+
+
+.icon_box{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end
+}
+
+.icon{
+  width: 80px;
+  padding: 12px;
+}
+
+/* ==========
+popup_portfolio
+===========*/
+#popup_portfolio {
+    /* 상하좌우 정중앙 정렬하기 */
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* 크기 */
+    width: 720px;
+    height: 480px;
+    border: 4px solid;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.portfolio_header {
+  background-color: #e9e6de;
+  text-align: center;
+  padding: 8px 0;
+  border-radius: 8px 8px 0 0;
+  height: 10%;
+
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#close-button {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  background-color: #fff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio_box {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  background-color: #fff;
+  border-radius: 0 0 8px 8px;
+}
+#menu {
+  width: 24%;
+  background-color:#cfd1e1;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+
+  margin: 16px;
+  border-radius: 8px;
+
+  overflow-y: auto;
+}
+
+#content {
+  flex: 1;
+  padding: 20px;
+  border: 4px solid #cfd1e1;;
+  margin: 16px;
+  border-radius: 9px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Add your own styling as needed */
+.menu-item {
+  cursor: pointer;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.menu-item:hover {
+  background-color: #f9f9f9;
+}
+
+
+/* 웹킷 브라우저에서 스크롤바 감추기 */
+#menu::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+#menu::-webkit-scrollbar-thumb {
+  background-color: #cfd1e1;
+}
+
+#menu::-webkit-scrollbar-track {
+  display: none;
+}

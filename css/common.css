@@ -1,0 +1,27 @@
+/* 
+Neo둥근모
+https://github.com/neodgm/neodgm
+*/
+@font-face {
+    font-family: 'neodunggeunmo';
+    src: url('../font/neodgm.woff') format('truetype');
+    src: url('../font/neodgm.woff2') format('truetype');
+}
+
+/*COMMON*/
+body {
+    background-color: #9cb6e3;
+    font-family: 'neodunggeunmo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #333;
+  }
+  a {
+    text-decoration: none;
+  }
+  img {
+    /* img(인라인 요소) 하단에 Baseline 공백을 제거 */
+    display: block;
+  }
+
